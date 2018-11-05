@@ -17,9 +17,32 @@ namespace CoffeeApi.Controllers
 
             if (_context.CoffeeItems.Count() == 0)
             {
-                _context.CoffeeItems.Add(new CoffeeItem { ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", Name = "Coffee1", Price = 1.25 });
-                _context.CoffeeItems.Add(new CoffeeItem { ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", Name = "Coffee2", Price = 2.25 });
-                _context.CoffeeItems.Add(new CoffeeItem { ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", Name = "Coffee3", Price = 3.25 });
+                _context.CoffeeItems.Add(new CoffeeItem { 
+                    ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", 
+                    Name = "Espresso", 
+                    Price = 1.25 
+                });
+                _context.CoffeeItems.Add(new CoffeeItem { 
+                    ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", 
+                    Name = "Double Espresso", 
+                    Price = 2.25 
+                });
+                _context.CoffeeItems.Add(new CoffeeItem { 
+                    ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", 
+                    Name = "Macchiato", 
+                    Price = 3.25 });
+                _context.CoffeeItems.Add(new CoffeeItem { 
+                    ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", 
+                    Name = "Americano", 
+                    Price = 3.50 });
+                _context.CoffeeItems.Add(new CoffeeItem { 
+                    ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", 
+                    Name = "Café Latte", 
+                    Price = 2.50 });
+                _context.CoffeeItems.Add(new CoffeeItem { 
+                    ImageURL = "https://upload.wikimedia.org/wikipedia/commons/5/52/Coffee_font_awesome.svg", 
+                    Name = "Cappuccino", 
+                    Price = 4.25 });
                 _context.SaveChanges();
             }
         }
