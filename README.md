@@ -13,3 +13,4 @@ From menu select Debug -> Start Debuging (F5).
 This should start debuger as well as open a default browser's windows with "http://localhost:5000" URL.
 
 If you navigate to "http://localhost:5000/api/coffee" you will get a list of avaiable elements.
+Note: This list is saved in in-memory DB. It always initializes when it is empty. It resets if application is restarted
